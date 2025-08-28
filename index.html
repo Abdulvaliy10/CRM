@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>World News Today</title>
+	<style>
+		body {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			margin: 0;
+			background: #f4f6f8;
+		}
+		header {
+			background: #1a237e;
+			color: #fff;
+			padding: 1.5rem 0;
+			text-align: center;
+			box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+		}
+		nav {
+			background: #283593;
+			display: flex;
+			justify-content: center;
+			gap: 2rem;
+			padding: 0.5rem 0;
+		}
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			font-weight: 500;
+			transition: color 0.2s;
+		}
+		nav a:hover {
+			color: #ffeb3b;
+		}
+		.container {
+			max-width: 1100px;
+			margin: 2rem auto;
+			display: flex;
+			gap: 2rem;
+		}
+		.main-news {
+			flex: 2;
+		}
+		.sidebar {
+			flex: 1;
+			background: #fff;
+			border-radius: 8px;
+			box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+			padding: 1rem;
+		}
+		.news-card {
+			background: #fff;
+			border-radius: 8px;
+			box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+			margin-bottom: 1.5rem;
+			overflow: hidden;
+			display: flex;
+			flex-direction: column;
+		}
+		.news-card img {
+			width: 100%;
+			height: 180px;
+			object-fit: cover;
+		}
+		.news-content {
+			padding: 1rem;
+		}
+		.news-title {
+			font-size: 1.2rem;
+			font-weight: bold;
+			margin: 0 0 0.5rem 0;
+		}
+		.news-meta {
+			color: #888;
+			font-size: 0.9rem;
+			margin-bottom: 0.5rem;
+		}
+		.news-desc {
+			font-size: 1rem;
+			color: #333;
+		}
+		.sidebar h3 {
+			margin-top: 0;
+		}
+		.headline-list {
+			list-style: none;
+			padding: 0;
+		}
+		.headline-list li {
+			margin-bottom: 0.8rem;
+		}
+		.headline-list a {
+			color: #1a237e;
+			text-decoration: none;
+			font-weight: 500;
+		}
+		.headline-list a:hover {
+			text-decoration: underline;
+		}
+		@media (max-width: 900px) {
+			.container {
+				flex-direction: column;
+			}
+			.sidebar {
+				margin-top: 2rem;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>World News Today</h1>
+		<p>Your source for the latest news from around the globe</p>
+	</header>
+	<nav>
+		<a href="#">Home</a>
+		<a href="#">World</a>
+		<a href="#">Politics</a>
+		<a href="#">Business</a>
+		<a href="#">Technology</a>
+		<a href="#">Sports</a>
+		<a href="#">Entertainment</a>
+		<a href="#">Health</a>
+	</nav>
+	<div class="container">
+		<main class="main-news">
+			<div class="news-card">
+				<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="World News">
+				<div class="news-content">
+					<div class="news-title">Global Leaders Meet to Discuss Climate Change</div>
+					<div class="news-meta">August 28, 2025 | International</div>
+					<div class="news-desc">World leaders gathered in Geneva today to address urgent climate issues, aiming for a unified approach to reduce global emissions and promote sustainable development.</div>
+				</div>
+			</div>
+			<div class="news-card">
+				<img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80" alt="Business News">
+				<div class="news-content">
+					<div class="news-title">Stock Markets Rally Amid Economic Recovery</div>
+					<div class="news-meta">August 28, 2025 | Business</div>
+					<div class="news-desc">Global stock markets saw significant gains as economic indicators point to a strong recovery, with tech and green energy sectors leading the surge.</div>
+				</div>
+			</div>
+			<div class="news-card">
+				<img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80" alt="Sports News">
+				<div class="news-content">
+					<div class="news-title">Historic Win at the World Cup Finals</div>
+					<div class="news-meta">August 28, 2025 | Sports</div>
+					<div class="news-desc">In a thrilling match, the underdog team clinched the World Cup title, sparking celebrations across their home country and inspiring fans worldwide.</div>
+				</div>
+			</div>
+		</main>
+		<aside class="sidebar">
+			<h3>Top Headlines</h3>
+			<ul class="headline-list">
+				<li><a href="#">Tech Giants Announce New AI Initiatives</a></li>
+				<li><a href="#">Elections: What You Need to Know</a></li>
+				<li><a href="#">Breakthrough in Renewable Energy</a></li>
+				<li><a href="#">Global Health: New Vaccines Released</a></li>
+				<li><a href="#">Travel: Top Destinations for 2025</a></li>
+			</ul>
+			<h3>Categories</h3>
+			<ul class="headline-list">
+				<li><a href="#">World</a></li>
+				<li><a href="#">Business</a></li>
+				<li><a href="#">Technology</a></li>
+				<li><a href="#">Sports</a></li>
+				<li><a href="#">Entertainment</a></li>
+				<li><a href="#">Health</a></li>
+			</ul>
+		</aside>
+	</div>
+</body>
+</html>
